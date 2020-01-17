@@ -5,8 +5,8 @@ import Title from '../Title/Title';
 import PortfolioContext from '../../context/context';
 
 const About = () => {
-  const { about } = useContext(PortfolioContext);
-  const { img, paragraphOne, paragraphTwo, paragraphThree, resume } = about;
+  const { paragraphOne, paragraphTwo, paragraphThree, resume } = useContext(PortfolioContext);
+  // const { paragraphOne, paragraphTwo, paragraphThree, resume } = about;
   
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -30,7 +30,7 @@ const About = () => {
             <Fade bottom duration={1000} delay={600} distance="30px">
               <div className="about-wrapper__image">
                 <Image 
-                src={`${process.env.PUBLIC_URL}/assets/${img}`} 
+                src="https://avatars0.githubusercontent.com/u/25899833?s=460&v=4"
                 alt="profile pic" thumbnail />
               </div>
             </Fade>
